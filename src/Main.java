@@ -6,9 +6,9 @@ public class Main {
         String question = "Is learning fun?";
         String choiceOne = "No";
         String choiceTwo = "Yes";
-        String choiceThree = "Only when it's with chocolate";
+        String choiceThree = "Meh";
 
-        String correctAnswer = choiceTwo;
+        String correctAnswer = choiceTwo.toLowerCase();
 
         // Write a print statement asking the question
         // Write a print statement giving the answer choices
@@ -21,11 +21,11 @@ public class Main {
         // Have the user input an answer
         // Retrieve the user's input
         System.out.println("Choose which number");
-        Scanner input = new Scanner(System.in);
-        input.next();
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
         // If the user's input matches the correctAnswer...
         // then the user is correct and we want to print out a congrats message to the user.
-        if (correctAnswer.equals(input.toString())){
+        if (correctAnswer.equals(input.toLowerCase())){
             System.out.println("Congrats you are correct");
         } else {
         // If the user's input does not match the correctAnswer...
